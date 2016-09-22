@@ -24,8 +24,7 @@
 			width: 100%
 			height: 22vh
 			display: flex
-			flex-direction: row
-			justify-content: space-in-between
+			
 
 		.row1
 			.row-1-box-1-invi
@@ -74,7 +73,16 @@
 					justify-content: space-in-between
 					align-items: center
 							
-					
+					.condition
+						width: 40px
+						height: 40px
+						background:
+							image: url(../images/cloudy.png)
+							repeat: no-repeat
+							size: contain
+						@media (max-width: 640px)
+							width: 40px
+							height: 40px
 					h1.temp-large
 						color: white
 						text-align: center
@@ -89,24 +97,16 @@
 					ul
 						list-style: none
 						padding-left: 0
+						margin-bottom: 0
 						li
 							display: inline
 							color: white
 
 						@media (max-width: 640px)
 							li
-								font-size: 0.5em
+								font-size: 0.75em
 
-				.condition
-					width: 40px
-					height: 40px
-					background:
-						image: url(../images/cloudy.png)
-						repeat: no-repeat
-						size: contain
-					@media (max-width: 640px)
-						width: 40px
-						height: 40px				
+							
 
 					
 

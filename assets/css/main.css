@@ -36,16 +36,7 @@
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: space-in-between;
-      -webkit-justify-content: space-in-between;
-          -ms-flex-pack: space-in-between;
-              justify-content: space-in-between; }
+      display: flex; }
     .main-wrapper .inner-wrapper .row1 .row-1-box-1-invi {
       height: 100%;
       width: 20%; }
@@ -114,6 +105,16 @@
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center; }
+        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail .condition {
+          width: 40px;
+          height: 40px;
+          background-image: url(../images/cloudy.png);
+          background-repeat: no-repeat;
+          background-size: contain; }
+          @media (max-width: 640px) {
+            .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail .condition {
+              width: 40px;
+              height: 40px; } }
         .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail h1.temp-large {
           color: white;
           text-align: center;
@@ -127,23 +128,14 @@
               padding-left: 10px; } }
         .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul {
           list-style: none;
-          padding-left: 0; }
+          padding-left: 0;
+          margin-bottom: 0; }
           .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li {
             display: inline;
             color: white; }
           @media (max-width: 640px) {
             .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li {
-              font-size: 0.5em; } }
-      .main-wrapper .inner-wrapper .row1 .row-1-box-2 .condition {
-        width: 40px;
-        height: 40px;
-        background-image: url(../images/cloudy.png);
-        background-repeat: no-repeat;
-        background-size: contain; }
-        @media (max-width: 640px) {
-          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .condition {
-            width: 40px;
-            height: 40px; } }
+              font-size: 0.75em; } }
       @media (max-width: 540px) {
         .main-wrapper .inner-wrapper .row1 .row-1-box-2 {
           width: 60%; }
