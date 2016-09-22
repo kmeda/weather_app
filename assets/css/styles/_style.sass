@@ -16,7 +16,7 @@
 		background:
 			image: url(../images/earthnight.png)
 			size: cover
-			repeat: repeat
+			repeat: no-repeat
 
 
 		
@@ -47,7 +47,6 @@
 				display: flex
 				flex-direction: column
 				align-items: center
-				//justify-content: space-around
 				width: 60%
 				height: 100%
 
@@ -66,6 +65,8 @@
 					font-weight: normal
 					@media (max-width: 640px)
 						font-size: 1.5em
+					@media (max-width: 540px)
+						font-size: 1.2em
 				
 				.weather-detail
 					display: flex
@@ -80,9 +81,7 @@
 							image: url(../images/cloudy.png)
 							repeat: no-repeat
 							size: contain
-						@media (max-width: 640px)
-							width: 40px
-							height: 40px
+						
 					h1.temp-large
 						color: white
 						text-align: center
@@ -91,7 +90,6 @@
 						font-weight: normal
 						padding-left: 30px
 						@media (max-width: 640px)
-							font-size: 2.5em
 							padding-left: 10px
 
 					ul
@@ -106,35 +104,21 @@
 							li
 								font-size: 0.75em
 
-							
-
-					
-
-
-
-
-				@media (max-width: 540px)
-					width: 60%
-					h1.location
-						font-size: 1.2em
-			
-		
 		.row2
 			.row-2-box-1
+				display: flex
+				flex-direction: column
+				height: 100%
+				width: 40%
+				.prog-bar
+					height: 2px
+					width: 100%
+					background-color: white
 				background:
 					image: url(../images/night_milky.jpg)
 					size: cover
 					position: center
 					repeat: no-repeat
-				height: 100%
-				width: 40%	
-				
-				display: flex
-				flex-direction: column
-				.prog-bar
-					height: 2px
-					width: 100%
-					background-color: white
 				@media (max-width: 540px)
 					display: none
 
@@ -148,23 +132,21 @@
 				@media (max-width: 540px)
 					width: 100%
 			.row-2-box-3
-				background:
-					image: url(../images/deer_silhou.png)
-					size: cover
-					position: center
-					repeat: no-repeat
-				width: 20%
-				height: 100%
-
 				display: flex
 				flex-direction: column
 				.prog-bar
 					height: 2px
 					width: 100%
 					background-color: white
+				width: 20%
+				height: 100%
+				background:
+					image: url(../images/deer_silhou.png)
+					size: cover
+					position: center
+					repeat: no-repeat
 				@media (max-width: 900px)
 					display: none
-
 
 		.row3
 			.row-3-box-1-invi-1
@@ -174,7 +156,30 @@
 					width: 40%
 				@media (max-width: 540px)
 					display: none
+			.row-3-box-1
+				display: none
+				background:
+					image: url(../images/night_milky.jpg)
+					size: cover
+					position: center
+					repeat: no-repeat
+				height: 100%
+				width: 40%	
+				.prog-bar
+					height: 2px
+					width: 100%
+					background-color: white
+				@media (max-width: 540px)
+					display: flex
+					flex-direction: column
+					width: 100%
 			.row-3-box-2
+				display: flex
+				flex-direction: column
+				.prog-bar
+					height: 2px
+					width: 100%
+					background-color: white
 				width: 20%
 				height: 100%
 				background:
@@ -182,15 +187,6 @@
 					size: cover
 					position: center
 					repeat: no-repeat
-				width: 20%
-				height: 100%
-
-				display: flex
-				flex-direction: column
-				.prog-bar
-					height: 2px
-					width: 100%
-					background-color: white
 				@media (max-width: 900px)
 					width: 30%
 				@media (max-width: 540px)
@@ -204,40 +200,25 @@
 			
 			.row-3-box-3
 				display: none
-				background:
-					image: url(../images/deer_silhou.png)
-					size: cover
-					position: center
-					repeat: no-repeat
 				width: 20%
 				height: 100%
 				.prog-bar
 					height: 2px
 					width: 100%
 					background-color: white
+				background:
+					image: url(../images/deer_silhou.png)
+					size: cover
+					position: center
+					repeat: no-repeat
 				@media (max-width: 900px)
 					display: flex
 					flex-direction: column
 					width: 30%
 				@media (max-width: 540px)
 					display: none
-		.row-2-box-1
-				display: none
-				background:
-					image: url(../images/night_milky.jpg)
-					size: cover
-					position: center
-					repeat: no-repeat
-				height: 100%
-				width: 40%	
-				
-				.prog-bar
-					height: 2px
-					width: 100%
-					background-color: white
-				@media (max-width: 540px)
-					display: flex
-					flex-direction: column
-					width: 100%
+
+			
+		
 			
 		
