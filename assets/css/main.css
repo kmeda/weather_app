@@ -27,7 +27,7 @@
             flex-direction: column;
     width: 80%;
     height: 65%;
-    background-image: url(../images/earthnight.jpg);
+    background-image: url(../images/earthnight.png);
     background-size: cover;
     background-repeat: repeat; }
     .main-wrapper .inner-wrapper .row1, .main-wrapper .inner-wrapper .row2, .main-wrapper .inner-wrapper .row3 {
@@ -51,7 +51,7 @@
       width: 20%; }
       @media (max-width: 900px) {
         .main-wrapper .inner-wrapper .row1 .row-1-box-1-invi {
-          width: 10%; } }
+          width: 15%; } }
       @media (max-width: 540px) {
         .main-wrapper .inner-wrapper .row1 .row-1-box-1-invi {
           display: none; } }
@@ -59,28 +59,96 @@
       background-color: #07bac5;
       height: 100%;
       width: 20%;
-      opacity: 0.7; }
+      opacity: 0.75; }
       @media (max-width: 900px) {
         .main-wrapper .inner-wrapper .row1 .row-1-box-1 {
-          width: 30%; } }
+          width: 25%; } }
       @media (max-width: 540px) {
         .main-wrapper .inner-wrapper .row1 .row-1-box-1 {
           width: 40%; } }
     .main-wrapper .inner-wrapper .row1 .row-1-box-2 {
-      width: 40%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 60%;
       height: 100%; }
       .main-wrapper .inner-wrapper .row1 .row-1-box-2 h1 {
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        top: 0; }
+      .main-wrapper .inner-wrapper .row1 .row-1-box-2 h1.location {
         color: white;
-        text-align: center; }
+        text-align: center;
+        font-family: "Fira Sans";
+        font-size: 1.8em;
+        font-weight: normal; }
+        @media (max-width: 640px) {
+          .main-wrapper .inner-wrapper .row1 .row-1-box-2 h1.location {
+            font-size: 1.5em; } }
+      .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-in-between;
+        -webkit-justify-content: space-in-between;
+            -ms-flex-pack: space-in-between;
+                justify-content: space-in-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail h1.temp-large {
+          color: white;
+          text-align: center;
+          font-family: "Fira Sans";
+          font-size: 2.5em;
+          font-weight: normal;
+          padding-left: 30px; }
+          @media (max-width: 640px) {
+            .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail h1.temp-large {
+              font-size: 2.5em;
+              padding-left: 10px; } }
+        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul {
+          list-style: none;
+          padding-left: 0; }
+          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li {
+            display: inline;
+            color: white; }
+          @media (max-width: 640px) {
+            .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li {
+              font-size: 0.5em; } }
+      .main-wrapper .inner-wrapper .row1 .row-1-box-2 .condition {
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/cloudy.png);
+        background-repeat: no-repeat;
+        background-size: contain; }
+        @media (max-width: 640px) {
+          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .condition {
+            width: 40px;
+            height: 40px; } }
       @media (max-width: 540px) {
         .main-wrapper .inner-wrapper .row1 .row-1-box-2 {
-          width: 60%; } }
-    .main-wrapper .inner-wrapper .row1 .row-1-box-2-invi {
-      width: 20%;
-      height: 100%; }
-      @media (max-width: 540px) {
-        .main-wrapper .inner-wrapper .row1 .row-1-box-2-invi {
-          display: none; } }
+          width: 60%; }
+          .main-wrapper .inner-wrapper .row1 .row-1-box-2 h1.location {
+            font-size: 1.2em; } }
     .main-wrapper .inner-wrapper .row2 .row-2-box-1 {
       background-image: url(../images/night_milky.jpg);
       background-size: cover;
@@ -108,7 +176,7 @@
       width: 40%;
       height: 100%;
       background-color: #aa0470;
-      opacity: 0.6; }
+      opacity: 0.75; }
       @media (max-width: 900px) {
         .main-wrapper .inner-wrapper .row2 .row-2-box-2 {
           width: 60%; } }

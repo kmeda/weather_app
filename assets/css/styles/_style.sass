@@ -14,9 +14,11 @@
 		width: 80%
 		height: 65%
 		background:
-			image: url(../images/earthnight.jpg)
+			image: url(../images/earthnight.png)
 			size: cover
 			repeat: repeat
+
+
 		
 		.row1, .row2, .row3					
 			width: 100%
@@ -30,32 +32,92 @@
 				height: 100%
 				width: 20%
 				@media (max-width: 900px)
-					width: 10%
+					width: 15%
 				@media (max-width: 540px)
 					display: none
 			.row-1-box-1
 				background-color: #07bac5
 				height: 100%
 				width: 20%
-				opacity: 0.7
+				opacity: 0.75
 				@media (max-width: 900px)
-					width: 30%
+					width: 25%
 				@media (max-width: 540px)
 					width: 40%
 			.row-1-box-2
-				width: 40%
+				display: flex
+				flex-direction: column
+				align-items: center
+				//justify-content: space-around
+				width: 60%
 				height: 100%
+
+				
 				h1
+					padding: 0
+					margin: 0 
+					bottom: 0
+					top: 0
+
+				h1.location
 					color: white
 					text-align: center
+					font-family: "Fira Sans"
+					font-size: 1.8em
+					font-weight: normal
+					@media (max-width: 640px)
+						font-size: 1.5em
+				
+				.weather-detail
+					display: flex
+					flex-direction: row
+					justify-content: space-in-between
+					align-items: center
+							
+					
+					h1.temp-large
+						color: white
+						text-align: center
+						font-family: "Fira Sans"
+						font-size: 2.5em
+						font-weight: normal
+						padding-left: 30px
+						@media (max-width: 640px)
+							font-size: 2.5em
+							padding-left: 10px
+
+					ul
+						list-style: none
+						padding-left: 0
+						li
+							display: inline
+							color: white
+
+						@media (max-width: 640px)
+							li
+								font-size: 0.5em
+
+				.condition
+					width: 40px
+					height: 40px
+					background:
+						image: url(../images/cloudy.png)
+						repeat: no-repeat
+						size: contain
+					@media (max-width: 640px)
+						width: 40px
+						height: 40px				
+
+					
+
+
+
+
 				@media (max-width: 540px)
 					width: 60%
-				
-			.row-1-box-2-invi
-				width: 20%
-				height: 100%
-				@media (max-width: 540px)
-					display: none
+					h1.location
+						font-size: 1.2em
+			
 		
 		.row2
 			.row-2-box-1
@@ -80,7 +142,7 @@
 				width: 40%
 				height: 100%
 				background-color: #aa0470
-				opacity: 0.6
+				opacity: 0.75
 				@media (max-width: 900px)
 					width: 60%
 				@media (max-width: 540px)
