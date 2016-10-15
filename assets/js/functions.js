@@ -7,11 +7,11 @@ $('.image').hide().fadeIn(2000);
 
 		var INTERVAL_IN_MS = 5000;
 
-		var feed1 = "";
+		var feed1 = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 		var feed2 = "";
 		var feed3 = "";
 	  function getImage00() {
-	    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
+	    $.getJSON( feed1, {
 	        tagmode: "nature",
 	        format: "json"
 	      }, function(data) {
@@ -26,7 +26,7 @@ $('.image').hide().fadeIn(2000);
 	  }
 
 		function getImage01() {
-	    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
+	    $.getJSON( feed1, {
 	        tagmode: "wild",
 	        format: "json"
 	      }, function(data) {
@@ -42,7 +42,7 @@ $('.image').hide().fadeIn(2000);
 	  }
 
 		function getImage02() {
-	    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
+	    $.getJSON( feed1, {
 	        tagmode: "animals",
 	        format: "json"
 	      }, function(data) {
