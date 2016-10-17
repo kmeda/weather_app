@@ -63,7 +63,7 @@ $(document).ready(function(){
 		var lon = position.coords.longitude;
 		coords_arr.push(lat, lon);
 
-		var current_weather = "http://api.openweathermap.org/data/2.5/weather?";
+		var current_weather = "https://api.openweathermap.org/data/2.5/weather?";
 		$.getJSON(current_weather,
 			{
 				lat: coords_arr[0],
