@@ -2,15 +2,52 @@
 	.row1
 		.row-1-box-1-invi
 		.row-1-box-1
+			.blur
+				.parameters
+					ul
+						li Sunrise:
+						li Sunset:
+					ul
+						li Rain:
+						li Humidity:
+					ul
+						li Wind:
+						li Feels Like:
+					ul
+						li Precipitation:
+						li Pressure:
+					ul
+						li Visibility:
+						li UV Index:
+				.values
+					ul
+						li.sunrise __
+						li.sunset __
+					ul
+						li.rain __
+						li.humidity __
+					ul
+						li.wind __
+						li.feels-like __
+					ul
+						li.precipitation __
+						li.pressure __
+					ul
+						li.visibility __
+						li.uvindex __
+
+
 		.row-1-box-2
-			h1.location
 			.weather-detail
-				.condition
-				h1.temp-large
-				ul.toggle
-					li.toggle-c C
-					li /
-					li.toggle-f  F
+				ul
+					li.location
+					ul.toggle
+						li.temp-large
+						li.centigrade C
+						li  |
+						li.fahrenhiet  F
+					li
+						image.condition
 
 
 	.row2
@@ -19,6 +56,7 @@
 			image.image(src=('https://source.unsplash.com/collection/366934/400x300'))
 
 		.row-2-box-2
+			h1 Today: Mostly sunny currently. The high will be 32°. Partly cloudy tonite with a low of 18°.
 		.row-2-box-3
 			.prog-bar
 			image.image(src=('https://source.unsplash.com/collection/368888/400x300'))

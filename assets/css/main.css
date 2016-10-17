@@ -51,9 +51,70 @@
         .main-wrapper .inner-wrapper .row1 .row-1-box-1-invi {
           display: none; } }
     .main-wrapper .inner-wrapper .row1 .row-1-box-1 {
-      background-color: #0fffd4;
       height: 100%;
-      width: 20%; }
+      width: 20%;
+      overflow-y: scroll;
+      background-color: #057972; }
+      .main-wrapper .inner-wrapper .row1 .row-1-box-1::-webkit-scrollbar {
+        width: 1px; }
+      .main-wrapper .inner-wrapper .row1 .row-1-box-1::-webkit-scrollbar-thumb {
+        background: white; }
+      .main-wrapper .inner-wrapper .row1 .row-1-box-1 .blur {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 100%; }
+        .main-wrapper .inner-wrapper .row1 .row-1-box-1 .blur .parameters {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          width: 100%;
+          height: 100%; }
+          .main-wrapper .inner-wrapper .row1 .row-1-box-1 .blur .parameters ul {
+            list-style-type: none;
+            text-align: right;
+            font-size: 0.7em;
+            font-family: "Fira Sans";
+            color: white;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            padding-left: 0; }
+        .main-wrapper .inner-wrapper .row1 .row-1-box-1 .blur .values {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          width: 100%;
+          height: 100%; }
+          .main-wrapper .inner-wrapper .row1 .row-1-box-1 .blur .values ul {
+            list-style-type: none;
+            font-size: 0.7em;
+            font-family: "Fira Sans";
+            color: white;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            padding-left: 0; }
       @media (max-width: 900px) {
         .main-wrapper .inner-wrapper .row1 .row-1-box-1 {
           width: 25%; } }
@@ -61,80 +122,66 @@
         .main-wrapper .inner-wrapper .row1 .row-1-box-1 {
           width: 40%; } }
     .main-wrapper .inner-wrapper .row1 .row-1-box-2 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
       width: 60%;
       height: 100%; }
-      .main-wrapper .inner-wrapper .row1 .row-1-box-2 h1 {
-        padding: 0;
-        margin: 0;
-        bottom: 0;
-        top: 0; }
-      .main-wrapper .inner-wrapper .row1 .row-1-box-2 h1.location {
-        color: white;
-        text-align: center;
-        font-family: "Fira Sans";
-        font-size: 1.5em;
-        font-weight: normal;
-        margin-top: 10px; }
-        @media only screen and (max-width: 640px) and (orientation: portrait) {
-          .main-wrapper .inner-wrapper .row1 .row-1-box-2 h1.location {
-            margin-top: 50px; } }
       .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: space-in-between;
-        -webkit-justify-content: space-in-between;
-            -ms-flex-pack: space-in-between;
-                justify-content: space-in-between;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         -webkit-box-align: center;
         -webkit-align-items: center;
             -ms-flex-align: center;
-                align-items: center; }
-        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail .condition {
-          width: 40px;
-          height: 40px;
-          background-image: url(../images/cloudy.png);
-          background-repeat: no-repeat;
-          background-size: contain; }
-        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail h1.temp-large {
+                align-items: center;
+        width: 100%;
+        height: 100%; }
+        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul {
+          list-style-type: none; }
+        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail li.location {
+          color: white;
+          text-align: center;
+          font-family: "Fira Sans";
+          font-size: 1.5em;
+          font-weight: normal;
+          margin-bottom: 0;
+          padding: 0;
+          bottom: 0;
+          top: 0; }
+          @media only screen and (max-width: 640px) and (orientation: portrait) {
+            .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail li.location {
+              margin-top: 50px; } }
+        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail li.temp-large {
           color: white;
           text-align: center;
           font-family: "Fira Sans";
           font-size: 2.5em;
           font-weight: normal;
-          padding-left: 30px; }
+          margin-left: 20px;
+          margin-right: 10px; }
           @media (max-width: 640px) {
-            .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail h1.temp-large {
+            .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail li.temp-large {
               padding-left: 10px; } }
-        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul {
-          list-style: none;
+        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul.toggle {
+          list-style-type: none;
           padding-left: 0;
-          margin-bottom: 0; }
-          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li {
+          margin-bottom: 0;
+          font-family: "Fira Sans"; }
+          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul.toggle li {
             display: inline;
-            color: white; }
-          @media (max-width: 640px) {
-            .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li {
-              font-size: 0.75em; } }
+            color: white;
+            cursor: pointer; }
+        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail li image.condition {
+          width: 50px;
+          height: 50px; }
     .main-wrapper .inner-wrapper .row2 .row-2-box-1 {
       height: 100%;
       width: 40%; }
@@ -142,9 +189,28 @@
         .main-wrapper .inner-wrapper .row2 .row-2-box-1 {
           display: none; } }
     .main-wrapper .inner-wrapper .row2 .row-2-box-2 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       width: 40%;
       height: 100%;
-      background-color: #ff138b; }
+      background-color: #ac1a64; }
+      .main-wrapper .inner-wrapper .row2 .row-2-box-2 h1 {
+        color: white;
+        font-family: "Fira Sans";
+        font-size: 0.8em;
+        line-height: 1.6em;
+        padding: 5px;
+        margin: 5px; }
       @media (max-width: 900px) {
         .main-wrapper .inner-wrapper .row2 .row-2-box-2 {
           width: 60%; } }
@@ -218,7 +284,7 @@
           display: none; } }
 
 .row-1-box-1, .row-2-box-2 {
-  opacity: 0.8; }
+  opacity: 0.9; }
 
 .row-2-box-1, .row-2-box-3, .row-3-box-1, .row-3-box-2, .row-3-box-3 {
   display: -webkit-box;
