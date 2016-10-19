@@ -75,6 +75,15 @@ $(document).ready(function(){
 			console.log(data);
 			$('.location').text(data.name);
 			$('.temp-large').text(Math.floor(data.main.temp) + "°");
+			$(".toggle").click(function () {
+						 var text = $('.toggle').text();
+						 $(this).text(text == "C" ? "F" : "C");
+						 var temp = $('.temp-large').text();
+						 var tempC = Math.floor(data.main.temp);
+						 var tempF = (((Math.floor(data.main.temp)) * 9) / 5) + 32;
+						 
+						 $('.temp-large').text( temp == tempF +  "°" ? tempC +  "°" : tempF +  "°");
+					});
 
 			var weather_icon = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 			$('.condition').attr('src', weather_icon);
@@ -112,9 +121,17 @@ $(document).ready(function(){
 
 			var weatherDescription = "Today: " + data.weather[0].description + ". The high will be "+ Math.round(data.main.temp_max)+"° with a low of "+ Math.round(data.main.temp_min) + "°.";
 			$('.row-2-box-2 h1').text(weatherDescription);
+
+
+
 		});
 
 	});
+
+
+
+
+
 
 });
 

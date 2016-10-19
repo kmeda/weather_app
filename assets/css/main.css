@@ -87,6 +87,7 @@
             text-align: right;
             font-size: 0.7em;
             font-family: "Fira Sans";
+            font-weight: bold;
             color: white;
             margin-left: 10px;
             margin-bottom: 5px;
@@ -111,6 +112,7 @@
             list-style-type: none;
             font-size: 0.7em;
             font-family: "Fira Sans";
+            font-weight: bold;
             color: white;
             margin-left: 10px;
             margin-bottom: 5px;
@@ -146,39 +148,46 @@
         height: 100%; }
         .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul {
           list-style-type: none; }
-        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail li.location {
-          color: white;
-          text-align: center;
-          font-family: "Fira Sans";
-          font-size: 1.5em;
-          font-weight: normal;
-          margin-bottom: 0;
-          padding: 0;
-          bottom: 0;
-          top: 0; }
-          @media only screen and (max-width: 640px) and (orientation: portrait) {
-            .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail li.location {
-              margin-top: 50px; } }
-        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail li.temp-large {
-          color: white;
-          text-align: center;
-          font-family: "Fira Sans";
-          font-size: 2.5em;
-          font-weight: normal;
-          margin-left: 20px;
-          margin-right: 10px; }
-          @media (max-width: 640px) {
-            .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail li.temp-large {
-              padding-left: 10px; } }
-        .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul.toggle {
-          list-style-type: none;
-          padding-left: 0;
-          margin-bottom: 0;
-          font-family: "Fira Sans"; }
-          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul.toggle li {
-            display: inline;
+          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li.location {
             color: white;
-            cursor: pointer; }
+            text-align: center;
+            font-family: "Fira Sans";
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-bottom: 0;
+            padding: 0;
+            bottom: 0;
+            top: 0; }
+            @media only screen and (max-width: 640px) and (orientation: portrait) {
+              .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li.location {
+                margin-top: 50px; } }
+          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            font-family: "Fira Sans"; }
+          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li {
+            display: inline;
+            color: white; }
+          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li.temp-large {
+            color: white;
+            text-align: center;
+            font-family: "Fira Sans";
+            font-size: 2.5em;
+            font-weight: normal;
+            margin-left: 20px;
+            margin-right: 0; }
+            @media (max-width: 640px) {
+              .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul li.temp-large {
+                padding-left: 10px; } }
+          .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail ul .toggle {
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            font-size: 1.2em;
+            border: none;
+            outline: none;
+            background-color: white; }
         .main-wrapper .inner-wrapper .row1 .row-1-box-2 .weather-detail li image.condition {
           width: 50px;
           height: 50px; }
